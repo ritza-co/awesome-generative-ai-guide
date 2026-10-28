@@ -1,5 +1,7 @@
 # AI Engineer Projects That Get You Hired
 
+**Published YouTube description:** [Read the full description](descriptions/ai-engineer-projects.txt)
+
 [Watch on YouTube](https://www.youtube.com/@aish_reganti) · 2026-10-08
 <!-- TODO: replace with the video URL -->
 

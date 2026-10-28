@@ -1,0 +1,54 @@
+Most people trying to learn AI focus on the newest models, frameworks, and tools.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+Ironically, the people building the best AI systems focus on something else entirely.
+
+After spending a decade building AI systems—from research and enterprise software to leading AI teams—I've learned that every successful AI application is built on the same underlying principles. The models evolve. The tools change. But the architecture stays remarkably consistent.
+
+In this episode, I break down the complete AI Engineering Roadmap that will help you understand how modern AI systems are actually designed—from Large Language Models (LLMs) and AI agents to RAG, AI evaluations, multi-agent systems, AI Ops, and system design.
+
+You'll learn how to:
+
+• Understand how Large Language Models (LLMs) work under the hood
+• Choose the right AI model for different real-world problems
+• Build AI agents using Tools, Knowledge (RAG), and Memory
+• Evaluate AI systems before they fail in production
+• Know when to use a single agent versus a multi-agent architecture
+• Deploy AI applications that improve through AI Ops
+• Design production-ready AI systems for real business use cases
+• Think like an AI engineer instead of simply following tutorials
+
+I also share practical lessons from building production AI systems, real-world failures from companies like Air Canada and McDonald's, and the mental models used to design reliable AI products that continue improving after launch.
+
+Most importantly, you'll learn that mastering AI isn't about memorizing frameworks or chasing the latest model release.
+
+It's about developing a way of thinking that lets you solve any AI problem—from chatbots and coding assistants to enterprise AI systems.
+
+Because the biggest advantage in AI won't come from knowing the newest tool.
+
+00:00 How Do You Design an AI System? (The Mind Map)
+
+00:41 Start With the LLM: The Brain of Every AI System
+
+02:28 The 3 Core Components: Tools, Knowledge (RAG) & Memory
+
+07:06 AI Evals: How to Know Your AI Actually Works
+
+10:50 Multi-Agent Systems, AI Ops & System Design
+
+*Link to the handbook:* https://maven.com/aishwarya-kiriti/o/d4b008
+
+
+My LinkedIn: https://www.linkedin.com/in/areganti/
+
+Website: https://levelup-labs.ai/
+
+Free Newsletter: https://thenuancedperspective.substack.com/
+
+Free Courses: https://levelup-labs.ai/education
+
+My GitHub (AI resources): https://github.com/aishwaryanr/awesome-generative-ai-guide
+
+Instagram: https://www.instagram.com/aish_reganti

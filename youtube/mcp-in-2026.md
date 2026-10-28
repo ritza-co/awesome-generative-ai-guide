@@ -1,7 +1,9 @@
 # How MCP Works in 2026 Explained For Beginners
 
-**Video: Coming up soon.**
-<!-- Replace this placeholder with the public YouTube URL once the video is live. -->
+**Published YouTube description:** [Read the full description](descriptions/mcp-in-2026.txt)
+
+**Watch:** [How MCP Works in 2026 Explained For Beginners](https://www.youtube.com/watch?v=ro3CiyWcCT0)
+**Published:** October 15, 2026
 
 ## In this video
 
@@ -37,361 +39,162 @@
 - **Security:** [NSA, Model Context Protocol: Security Design Considerations for AI-Driven Automation](https://media.defense.gov/2026/Jun/02/2003943289/-1/-1/0/CSI_MCP_SECURITY.PDF), May 20, 2026. Authorization improvements do not eliminate prompt injection, tool poisoning or inappropriate tool use.
 - **Examples:** the Gmail integration and event-reminder workflow illustrate the architecture. MCP servers can be built by providers, third parties or your own team. Skills and plugins can work with or without MCP.
 
-## Video script
-
-_Reading version adapted from the recording script, with production directions removed and technical clarifications added. This is not the final edited transcript. It will be replaced with the published video's captions when available._
-
-MCP is blowing up yet again in 2026. MCP calls from ChatGPT users have apparently
-multiplied 98 times from just January to August, and companies are reporting more than 500%
-growth in usage of their MCP servers in just the past few months.
-
-I think a big reason for this interest is all the recent updates. MCP looks very different
-now, even compared with just a few months ago.
-
-If you're a beginner, confused by all these updates and wondering where to start, this is
-the only video you need. We'll go all the way from the foundations to the current state of
-MCP in 2026. So by the end of this, all of that confusion should be gone, and you'll be able
-to explain MCP clearly to anybody, including everything that's changed this year.
-
-Here's everything we're going to cover:
-
-- What MCP is and why it exists.
-- How MCP actually works under the hood.
-- How MCP is different from APIs, skills and plugins, and how they all fit together.
-- The four big things that changed in 2026, and why each one happened.
-
-If you're new here, I'm Aishwarya Reganti. I've been working in AI for more than a decade, I
-have patents and publications in some of the top AI conferences, and until last year I was
-an AI scientist and tech lead at AWS building production systems for large enterprises. Now
-I run my own startup, LevelUp Labs, where we help companies go AI native.
-
----
-
-### What MCP is and why it exists
-
-MCP, or Model Context Protocol, is an open standard that gives AI applications a consistent
-way to connect to external tools and data. It was introduced by Anthropic in late 2024, and
-honestly, for a good part of the first few months, it really wasn't that popular.
-
-What really started the momentum was the agentic AI wave. Remember that the whole promise of
-agents is that you're no longer just chatting with a model and having a conversation. You
-want it to actually go and do work for you. And a lot of our actual work lives inside
-external applications, right? Our emails, our calendars, CRMs, databases, GitHub, and so on.
-So if an agent's going to do anything meaningful for you, it's going to need some way to
-connect to all of these applications. And as agents became more popular, MCP started getting a lot more
-attention too, and that accelerated even further as major companies like OpenAI and Google
-started supporting it.
-
-But this raises a pretty obvious question, right? App integrations have been around for a long time
-through APIs. Gmail has an API. Stripe has an API. GitHub has an API. So why did we suddenly
-need MCP?
-
-Now, APIs were primarily designed for developers writing software. So let's say I'm an
-engineer building an application that sends automatic emails to my subscribers whenever I have an
-event coming up, and I want to use Gmail to send those emails. I can go and read Gmail's API
-documentation, understand the operations it exposes, understand what information each
-request needs, and write deterministic software that creates the right request.
-
-Now let's say I want my agent to do that work instead. I tell it, send an email to everyone
-who registered for tomorrow's event. So the model now has to replace some of the work the
-engineer was previously doing. It needs to know what it can actually do with Gmail, what
-operations are available, what they mean, what arguments they expect, and what kind of
-request it needs to construct.
-
-So the API already gives us the ability to connect to Gmail, but there's still a lot of
-context the model needs before it can use that API reliably. And that's why developers
-started building a middle layer themselves. You'd expose a set of tools to the model and
-essentially say, these are the things you can do with Gmail. Send email is one of them. This
-is what it does, and these are the arguments you need to provide, so say the sender email, the receiver name, and the
-receiver email.
-
-Now the model has the context it needs. It can look at the user's request, identify the
-right tool, construct a structured request with the right arguments, and the software
-underneath can translate that into the actual Gmail API call. And the response from Gmail
-comes back through that same layer to the model.
-
-The problem was that there wasn't a standard way to build this middle layer. Different AI
-applications and frameworks could describe tools differently, discover them differently,
-invoke them differently, and return results differently. So everybody was essentially
-building their own version of the bridge between the model and the API.
-
-And that's the problem MCP is trying to solve. It standardises this layer, so that AI
-applications have a common way to discover external capabilities, understand how to use
-them, call them, and receive results.
-
-There was also another layer of overhead around security and authorization. The underlying
-APIs might already support OAuth, API keys, and other authentication mechanisms, but the AI
-integration still needs to connect those credentials and permissions into the agent
-experience safely. And MCP has increasingly standardised parts of that connection as well,
-so that every integration doesn't have to go and invent the whole authorization flow
-independently.
-
----
-
-### How MCP works under the hood
-
-So now let's understand a little bit about how MCP actually works under the hood. MCP uses a
-client and server architecture. That might sound technical, but it's actually pretty
-easy to understand, so stick with me.
-
-There are three terms you need to know. The first is the **host**. This is the larger AI
-application you're actually using, so something like Codex, Claude Code, or Cursor. And
-remember that these applications do a lot more than MCP. They manage the model, the context,
-permissions, tool use, and the rest of the agent experience.
+## Transcript
 
-Inside that host is an **MCP client**. This is essentially the part of that larger
-application that handles MCP. It knows how to communicate with MCP servers, understand what
-they expose, send requests, and receive responses.
+_English captions from the published video. Automatic caption wording is retained; timestamps link to the video._
 
-And then there's the **MCP server**, which can come from the application provider, a third party, or your own team. It's the thing that exposes
-the capabilities of an external application using MCP conventions, and the code inside that
-server knows how to translate those MCP requests into whatever the underlying application
-actually expects.
+**[00:00](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=0s)**
 
-Now, one thing you want to remember here is that for the same application, there can be two
-different kinds of MCP server.
+MCP is blowing up yet again in 2026. MCP calls from ChatGPT users have apparently multiplied 98 times [music] just from January to August this year. And companies are reporting more than 500% growth in usage of their MCP servers just in the past few months. And I think a big reason for this interest is all of the recent updates. And right now, MCP looks very different even just compared to the past few months. If you're a beginner confused by all of these updates happening to MCP and
 
-The first one is local, which means the server is running on your own machine. The host
-launches it as a program, and the two of them talk over something called stdio. That's
-standard input and output, so it's pretty much the way any program on your computer takes
-something in and writes something back out.
+**[00:31](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=31s)**
 
-The second one is remote, which means that server runs on infrastructure managed by a provider or another operator, and the host connects to it over HTTP.
+wondering where should you actually start, then this is the only video you need. We'll go all the way from the foundations to the current state of MCP in 2026. Here's everything we're going to cover in today's video. You can take a screenshot or find the HD version in my GitHub repository as well. Now, let's first understand what MCP is and why it exists, right? Because that sets a foundation for everything else we'll discuss. So, MCP or Model Context Protocol is pretty much an open standard that gives AI applications a consistent way to connect with external tools and
 
-But remember that in both of those cases, the server is still going out and calling Gmail's
-API over the internet. So what's changing is where that middle layer runs, and who's holding
-your credentials.
+**[01:01](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=61s)**
 
-To make that easier to visualise, let's stick with our email example. You open Codex and
-say, send an email to everyone who registered for tomorrow's event. Codex is the host. And
-inside Codex, its MCP client is connected to the Gmail MCP server.
+data. It's open source in nature, but it was first introduced by Anthropic [snorts] in late 2024. And for a good part, for a few months, it wasn't really that popular. Now, what started the momentum was the agentic AI wave in early 2025. And remember, the whole promise of agents is that you're no longer just chatting with a model or having a conversation, you actually wanted to go and do some work for you. And also remember, a lot of everyone's actual work lives in external applications like [music] emails, calendars CRMs databases GitHub
 
-The Gmail MCP server exposes what tools are available, what each one does, and what
-arguments they require. Codex can then make that information available to the AI model
-inside it. The model looks at your request, figures out which tool it needs, and generates
-the required arguments. And Codex uses its MCP client to send that request to the Gmail MCP
-server.
+**[01:31](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=91s)**
 
-The Gmail MCP server takes that standardised MCP request and translates it into whatever
-Gmail's actual API expects. Gmail performs the action, sends the response back, and that
-result comes back through the MCP server and the client to Codex.
+whatever, right? We mostly use a lot of our tools in our everyday work, and agents had to communicate with these tools or applications in some format. So, as agents started becoming more popular, MCP also started getting a lot more attention, and it accelerated [music] even further in mid-2025 when major companies like OpenAI and Google started supporting it as well. Now, when I start talking about this, it raises a pretty obvious question, right? App integrations and APIs have been there for years. Why do we need to introduce this whole MCP layer? All your favorite
 
-So what MCP gives us is that standardised layer on top of all these different APIs. The
-applications underneath can all work completely differently, but the AI application has one
-common way to discover capabilities, invoke them, and receive the results.
+**[02:02](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=122s)**
 
-Now remember another thing here, because we'll bring this back when we talk about what
-changed in 2026. The original MCP lifecycle had four basic ideas.
-**Initialization, discovery, request and response, and session.**
+tools, you know, your Gmail, Stripe, GitHub, whatever, they have APIs already. So, what is this new standard adding? Now, remember that APIs were primarily designed for developers writing software. So, let's say I'm an engineer who's building an application that sends automatic emails to all my subscribers whenever I have events coming up. And I'm using the Gmail API to send those emails. Now, I can go and read Gmail's API documentation, understand the [music] operations it exposes, understand what information each request needs, and write deterministic software that creates the
 
-First **initialization**. The MCP client and server would essentially introduce
-themselves, agree on which version of MCP they were speaking, and exchange information about
-what each side supported.
+**[02:33](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=153s)**
 
-Then  **discovery**. The client could ask the server what it actually exposed. So in our
-Gmail example, the server might return tools for searching email, reading email, and sending
-email, along with what each one does and what arguments it expects.
+right request. Now, think of the post-AI world, right? Let's say I want my agent to do that work instead, [music] which is I communicate with it in natural language and it sends out emails to everybody who's going to be attending my events. Now, the agent has to replace some of the work that I was doing previously, right? [music] It needs to have context of what the Gmail API can do, what kind of operations are available to it, and what kind of arguments to be put into a request so that [music] it can send out request to that API. So, in short, the API already gives us the ability to connect to
 
-Then you have the actual **request and response**. The model decides which capability it
-needs, the client sends that structured request over to the MCP server, and the server does
-the work and hands back a structured result.
+**[03:03](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=183s)**
 
-And finally, the server could create a **session** during initialization. And you can think of
-the session ID as the server's way of knowing where a request is coming from and which
-ongoing interaction it belongs to. The client would include that session ID with future
-requests, so the server could associate them with the same session.
+Gmail, but there's still a lot of context that the model needs before it can just go use that API reliably. [music] So, when developers started building agents, they started building that middle layer themselves. You'd expose a set of tools to the model and essentially just say that these are exactly all the actions you can take with the Gmail API. Send email is probably one of them. Read email is probably the other. And these are the exact arguments you need in order to create that request. For instance, for the send email operation, you probably need the sender's email, the receiver's
 
-So keep those four things in mind. Initialization, discovery, request and response, and
-session.
+**[03:34](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=214s)**
 
----
+name, and the receiver's email, and pretty much informing it about the request structure, [music] right? So, the agent has context that it needs. It can look at the user's request, identify [music] the right tool for the job, construct a structured request with the right arguments. And the software deterministic code underneath can translate that into an actual Gmail API call. [music] and the response from Gmail comes back through the same layer to that model. Now, one problem that came up when developers were building this way is that there wasn't a standard way to build this middle layer, right? Now, remember that different AI
 
-### MCP versus APIs, skills and plugins
+**[04:05](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=245s)**
 
-Now, before we get to what changed, there are a few other terms that get mixed up with MCP
-constantly. APIs, skills, and plugins. And now that you've seen how MCP actually works
-underneath, let's understand how the others are different. In fact, you can think of these as
-layers of the same system. You can almost visualise it as the API at the bottom, MCP on top
-of it, the skill above that, and the plugin as the box around it. So let's see why.
+applications and frameworks could describe tools differently, discover them differently, and invoke them differently, and the return results are also different. So, everybody was essentially building their own version of that bridge between the model and the API. [music] And that's the problem MCP is trying to solve. It standardizes this layer so that AI applications have a [music] common way to discover external capabilities, understand how to use them, and then receive the results. Now, there's also another side to this coin, which I want you to keep in mind, which is the overhead of security and
 
-So let's start with APIs, because it should now be obvious why they're still required. If an
-AI system needs to interact with an external application, the bottom layer is still the API.
+**[04:36](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=276s)**
 
-MCP doesn't replace that API. It sits on top of it, and gives the AI system a standardised
-way to discover and use those application capabilities. The MCP server can translate between
-the standardised MCP request on one side and whatever the application's API expects on the
-other.
+authorization. Now, the underlying APIs might already support things like OAuth, API keys, and other authentication mechanisms, but the AI integration still needs to connect those credentials and permissions into the agent [music] in order to have a safe experience. And MCP has increasingly standardized parts of that connection as well. Every integration doesn't have to go and reinvent the whole authorization flow independently. Now that you know why we need MCP, let's go a little deeper and understand how MCP actually works under the hood. MCP uses what we call a
 
-And then at the top, you can think of **skills** as the workflow layer. A skill contains
-reusable knowledge about how a particular task should be done. It can include instructions,
-procedures, examples, scripts, or any other context that helps an agent follow a repeatable
-workflow.
+**[05:06](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=306s)**
 
-So take our event reminder example. You could build an event reminder skill that teaches the
-agent how your company writes reminder emails. Maybe every reminder needs the event name,
-the location, the joining link, what attendees should prepare, and a particular brand voice.
+client-server architecture. Now, there are three terms you want to know and understand. The first is the host. This is the larger AI application that users actually interact with. Think of something like your Claude code, Codex, whatever cursor or harnesses like or even just your ChatGPT app. And remember that the host is an application which does much more than just the MCP, like managing model, managing the context, permissions, and all of that. And MCP is a small part of that experience. Now, inside that host, there is an MCP
 
-That skill teaches the agent how the task should be done. And when the agent actually needs
-to send the email, it can use the sending capability exposed through the Gmail MCP server.
-And underneath that, the Gmail MCP server talks to Gmail's API.
+**[05:36](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=336s)**
 
-And then there are plugins, which you'll run into in AI applications. A plugin is a packaging unit. It can bundle skills, app integrations, MCP servers, or other capabilities into a single installable thing. The contents depend on the application.
+client, which is essentially the part of that larger application that handles all of these MCP connections. Now, what it does is it knows to communicate with external applications like your Gmail, Stripe, GitHub, everything that we are talking about. It also understands what kind of operations they expose, sends requests, and also receives responses, right? So, it's pretty much this entity that's sitting within the host that handles all of the communication. And the third part is pretty much what the client communicates with, which is the MCP server. Now, the MCP server is what
 
-An email plugin could package the integration and the reminder workflow together, so you install one thing instead of wiring it together yourself. It may use MCP underneath, but plugins and skills do not have to use MCP.
+**[06:06](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=366s)**
 
-So the simple mental model is this. The API is how software interacts with the external
-application. MCP is the standardised connection layer that lets the AI system discover and
-use those capabilities. The skill is the workflow layer that teaches the agent how the job
-should be done. And a plugin is the bundle that ships you multiple skills and workflows, which might also
-use MCP
-together.
+exposes the capabilities of an external application using MCP conventions and standards. And it also handles communication with the client. Now, if all of this seems like too many words at once, let's take an example [music] to understand, right? The same example that we are using. This whole idea of sending an email to all of your event registrations. Now, you pretty much open Codex and say, "Send an email to everyone who registered for tomorrow's event." Now, Codex is the host, and inside [music] Codex, its MCP client is connected to the Gmail MCP server. And Gmail's MCP server exposes what tools
 
-Y
-So that's the foundation, and
-that's how the pieces fit together. Now let's get into what's actually changed this year.
+**[06:36](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=396s)**
 
----
+are available, [music] what each one does, and what arguments they require. Codex can then make that information available to the AI model inside it, and the model looks at your request, [music] figures out which are the tools it needs to handle that request, and generates the required request, right? That has to go to the Gmail MCP server. And all of this communication is handled by the MCP client. Now, the Gmail MCP server takes the standardized MCP request and translates [music] it into whatever Gmail's actual API expects. Now, the API pretty much performs the action, sends
 
-### What changed in MCP in 2026
+**[07:06](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=426s)**
 
-So now we've got the foundations of MCP down. But a lot has changed in 2026 alone, to the
-point where MCP today works quite differently from the version people were using only a few
-months ago. There are four major changes that I think every builder should know about, and
-let's go through each one and, more importantly, why it happened.
-
-The first major change is that **MCP became stateless**. So what does that actually mean?
-
-Go back to the four pieces we just learned. Initialization, discovery, request and response,
-and session. The client and server would initialize their connection, and the server could
-create a session. Future requests carried that session ID, so the server knew they belonged
-to the same ongoing interaction.
-
-Now take the Gmail MCP server from our example. At a very large scale, you're not going to
-have one server handling every single request. You'll have multiple server copies and 
-instances handling the load.
-
-So say the first request from user one reaches server one. That server knows the state
-associated with that session. But the next request from the same user happens to reach
-server seven. And server seven doesn't have whatever state server one was maintaining.
-
-There are basically two ways around this. You keep routing that client back to the same
-server, or you make sure all the server instances have access to shared session state. And
-both of those add infrastructure complexity, because the protocol itself expects the server
-to remember this ongoing interaction.
-
-So one of the biggest changes in the July 2026 specification was removing that requirement.
-The initialization handshake went away, and the MCP session ID went away. Every request is
-now self contained at the protocol level. So instead of introducing itself once and
-expecting the server to remember that information later, the client includes the information
-the server needs with each request.
-
-And that makes MCP much easier to scale.
-
-But removing sessions creates another pretty interesting problem. What if the server starts
-processing your request and realises that it needs something else from you before it can
-finish?
-
-Say you ask it to email everyone registered for an event. Before sending hundreds of emails,
-the server wants you to confirm the action. So if we no longer have this ongoing session,
-how does it stop and ask for that input?
-
-And this is where **Multi Round Trip Requests** come in. Now, the important thing here is
-that this isn't a callback, where the server somehow reaches back out to you later. The
-first request actually finishes and closes.
-
-What the server sends back is a special type of response. So instead of the normal result,
-it comes back flagged as input required, and that flag is the signal to the client that the
-work isn't finished and that something is needed from you. Along with that flag, the server
-sends back a small piece of request state, which is essentially its own note to itself about
-where it had got to.
-
-So that's the first big shift. MCP moved away from keeping an ongoing protocol session, and
-towards independent requests, while still giving us a way to handle interactions that need
-more than one round.
-
-The second major change is **MCP Tasks**, and this one comes from how much agents themselves
-have changed.
-
-When MCP was first designed, a lot of agent interactions looked much closer to normal tool
-calls. Search something. Read something. Send something. The request happens, and you've got
-the result back fairly quickly.
-
-But agents can now take on much longer pieces of work. You might ask one to analyse a large
-codebase, process thousands of customer conversations, run a deep research workflow, or do
-something that takes several minutes or even hours.
-
-And you really don't want one MCP request sitting open the entire time, waiting for that
-work to finish.
-
-So this is where the idea of an **MCP Task** comes in. The server can decide that a particular request should become a Task instead of
-returning the final result immediately. It hands back a task handle, and the client can use
-that handle to check the status, update the task, cancel it, and eventually go and get the
-result. Tasks were redesigned around the new stateless architecture, and they now live in
-the MCP extension system.
-
-So now MCP has a much cleaner model for work that doesn't finish in one quick request. The
-request can kick the work off, but the work itself carries on independently.
-
-The third major change is that **security and authorization got much stronger**.
-
-As MCP adoption grew, people started connecting agents to email, source code, CRMs, internal
-databases, and a lot of other systems containing sensitive information. So identity,
-credentials and permissions started mattering a lot more.
-
-The July specification tightened the authorization model itself. So for instance, clients now
-have stronger rules for verifying which authorization server actually issued a credential,
-and credentials are more carefully tied to the issuer that created them. MCP also moved away
-from having clients dynamically register themselves with every authorization server, and
-towards client metadata documents, which give authorization systems a more predictable way
-to identify clients.
-
-And then **Enterprise Managed Authorization** became stable. And what that means is that if a
-company's got thousands of employees and a set of approved MCP servers, it can centrally
-provision access through its existing identity provider. So users get access to the servers
-they're allowed to use through their company login, instead of individually authorizing
-every server themselves.
-
-And all of this was happening at a time when security concerns around MCP were becoming much
-harder to ignore. Researchers had already demonstrated things like tool poisoning and data
-exfiltration, and in May 2026 the NSA published specific security guidance for systems using
-MCP. Now, these authorization improvements don't solve every one of those security problems,
-but they do strengthen one very important part of the system, which is deciding who is
-connecting, what credentials they're using, and what they're allowed to access.
-
-The fourth shift is that **MCP became much more production ready**, and this one is really a
-collection of changes rather than a single feature.
-
-**Extensions.** MCP now has a formal extension system. So instead of putting every new
-capability directly into the core protocol, optional capabilities can evolve separately. MCP
-Tasks, MCP Apps, and Enterprise Managed Authorization can all live as extensions, so every
-server and client doesn't have to support every possible feature.
-
-**MCP Apps.** MCP can now support richer interfaces, instead of always returning only text or
-data. A server can hand back an interactive interface that a supporting host can render. So an
-analytics tool could return a dashboard, a workflow could return a form, or a CRM tool could
-return an interactive customer view.
-
-**Caching and easier request handling.** Tool lists and other list responses can now include
-caching information, so clients don't have to keep fetching the same catalogue again and
-again. Requests also expose information like the method and the tool name more clearly, which
-makes it easier for the systems handling MCP traffic to understand what kind of request is
-coming in.
-
-**More predictable protocol changes.** MCP now has a formal deprecation policy, with a
-minimum twelve month window before deprecated functionality is removed. And that's giving companies
-building on MCP a lot more time to plan migrations, instead of suddenly reacting to breaking
-changes.
-
-So if you step back and look at this from 10,000 feet, the pattern across all four changes
-is pretty clear. MCP originally solved
-the problem of giving AI applications a common way to connect to external tools and data. And
-in 2026, the focus shifted towards what happens once those connections are being used at much
-larger scale, by agents doing much longer pieces of work, with much more sensitive access,
-inside systems that companies actually need to depend on.
-
-Hopefully that gives you a clear idea of what MCP is, how it's changed in 2026, and why it
-matters to you if you're building with MCP.
-
-I'll see you in the next video. Do subscribe if you'd like to see more deep-dive videos.
-
-All the very best.
+the response back, and that result comes back through the MCP server and the client to Codex. So, two hops, basically, which is server to client, and client back to host, which displays it to the user. [music] And the whole point here is that MCP as a protocol gives us a standardized way to do all of this without having to build custom [music] components. Now, I want you to remember one more thing here because we'll bring this back when we talk about the changes in 2026 to MCP. The original MCP life cycle had four ideas: initialization, discovery,
+
+**[07:36](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=456s)**
+
+request and response, and session. Let's talk about [music] each one of them. Now, first is initialization. Now, the MCP client and server would essentially introduce themselves, agree on which version of MCP they were speaking with, and exchange information about what each site supported. And then there would be a discovery phase, which is the client would ask the server what it actually exposed. So in our Gmail example, the server might return tools for searching, for reading, etc. Along with what each one does and what arguments it expects.
+
+**[08:06](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=486s)**
+
+And only after this handshake is when the actual request and response [music] stops happening. So the AI model decides which capability it needs, the client sends that structured request over to the MCP server, and the MCP server completes that work and hands it back as a structured result. And finally, remember that the MCP server could create a session during the initialization and give the client a particular session [music] ID. And you can think of the session ID as the server's way of knowing where a request is coming from and which ongoing interaction it belongs to. >> [music] >> So when the client is having follow-up
+
+**[08:37](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=517s)**
+
+conversations, it would include that session ID so that the server could associate them with the same [music] session. So pretty much the MCP life cycle would be initialization, discovery, the request and response, and also having a session ID for follow-up requests. Now MCP is also usually confused with a few other terms in AI and let's clear that out before we move on. So let's learn about MCP versus APIs versus skills versus plugins today, right? In fact, you can think of all of these terms as layers in the same system and you can almost visualize an API
+
+**[09:07](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=547s)**
+
+sitting at the bottom, MCP on top of it, and skill about that, and a plugin as a package that can host different skills [music] and MCP servers. Let's start with APIs, right? Basically, if an AI system needs to interact with an external application, [music] the bottom layer is still the API. MCP doesn't replace that. It sits on top of it and gives the AI system a standardized way to discover and use those application capabilities. Now the MCP server can translate between the standardized MCP request [music] on one side and whatever
+
+**[09:37](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=577s)**
+
+the application's API expects on the other. And a layer above that is where the skills ecosystem sits. To put it very plain, a skill contains reusable knowledge about how a particular task should be done. For instance, [music] it can contain instructions, procedures, examples, scripts, or any other context that helps an agent follow a repeatable workflow. I want to take you back to the email example, right? Because it just follows a nice continuous [music] thread. Let's just say you're sending the event reminder email, you could build an event reminder skill that teaches the agent [music] how your
+
+**[10:07](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=607s)**
+
+company writes emails. Reminder emails pretty much. Maybe every reminder needs the event link, the name, the location, what attendees should prepare, and a particular brand voice essentially. So, that skill teaches your agent how the task should be done. And when the agent actually needs [music] to send the email, it can use the sending capability exposed through the Gmail MCP server. [music] And underneath that MCP server is Gmail's API. So, it's possible that the skill is using the MCP server, which [music] is calling the API. And finally,
+
+**[10:37](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=637s)**
+
+there's this idea of plugins, which is mostly something you would have heard of if you work with the OpenAI ecosystem, because tools like Codex and [music] ChatGPT work, etc., have the idea of plugins. And a plugin isn't really a competing standard, it's just a packaging [music] unit. So, when OpenAI shipped their plugin marketplace back in April 2026, they had about 90-plus plugins. [music] And all of these were essentially bundles of skills that could potentially also use MCP servers. And they were available as a single installable package. So, if you install the Gmail plugin in Codex, [music] it's
+
+**[11:07](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=667s)**
+
+essentially the Gmail MCP server plus the workflow knowledge around it, wrapped up so that you can install one thing instead of wiring a bunch of different things. And OpenAI also has plugins for data science [music] use cases, for product management use cases, product design use cases, and all of that. And they're pretty much bundles that contain [music] both skills and MCP servers wrapped up. So, the simple mental model I want you to think of is API is how the software interacts with the external application. [music] MCP is the standardized connection layer that lets the AI system discover and use
+
+**[11:38](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=698s)**
+
+those capabilities. The skill is the workflow layer that teaches the agent how a particular job should be done. And finally, if you've heard of the word plugin and you're confused in the context of AI, a plugin is a bundle that ships you multiple skills and workflows, which might or might not use MCP servers. All right, now let's go to the most interesting part of this video, which is what has changed in 2026 in the whole MCP space. Now, the first major change that happened in MCP is that it became stateless. Now, what does that
+
+**[12:08](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=728s)**
+
+actually mean? Remember the four pieces that we just learned as part of the MCP life cycle, initialization, discovery, request and response, and all of the session ID thing? So, the client and server would initialize their connection, and then the server could create a session, and future requests carried that session ID so that the server knew that they belonged to the same ongoing interaction. That's a TLDR, right? But what started happening is when they were popular MCP servers, let's for instance say Gmail MCP server, right? It's probably getting hundreds of thousands of requests. [music] There's not going to be one server
+
+**[12:39](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=759s)**
+
+handling every single request. Companies will essentially have multiple server copies and instances handling that load. So, say the first request from the user reaches server one, for example. That server knows the state associated with that session. And state here is what happened so far and what's been done. And the next request from the same user happens to reach server seven, and server seven does not have the state this old server was maintaining. Now, there are basically two ways around this. One is you keep routing that client back to [music] the same server,
+
+**[13:09](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=789s)**
+
+or you make sure that all server instances have the same shared session state. And both of these kind of add infrastructure complexity because the protocol itself expects a server to remember this ongoing interaction. So, one of the [music] biggest changes that happened in July 2026 was removing that entire requirement. Now, that whole initialization pretty much [music] went away and the concept of session ID also went away. Every MCP request now is self-contained and it's contained at the protocol level. So, instead of introducing itself and expecting that the server will remember that
+
+**[13:39](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=819s)**
+
+information later, the client includes that information every [music] request. And this small change actually makes MCP much more easier to scale. But, it does introduce a problem, which is kind of interesting and also is solved in the latest spec, which is what if the server starts processing your request and realizes that it probably needs something from the client before it can finish. Say, in our email example, if you ask it to email everyone registered for an event, but before sending out hundreds of emails, the server wants you to confirm that action. And if we no longer have the ongoing session ID, how
+
+**[14:11](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=851s)**
+
+does it stop and ask for any input? Now, that's where this whole idea of multi-round trip requests was introduced to solve this issue. It's also called MRTP. And the whole thing here isn't that this is not a callback where the server somehow reaches back out later. The first request that was sent is actually finished [music] and it closes. What the server actually sends back is a special kind of response. So, instead of a normal result, it comes back flagged as input required and that flag is a signal to the client that the work isn't
+
+**[14:41](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=881s)**
+
+finished [music] yet and some other input is needed from the user. Along with that flag, the server also sends back a small piece of request state, which is essentially its own note to itself as to what had happened and what it's looking for. So, that even if the server changes, it goes from say server one to server 10 or 15 or whatever it is, the new server has all of the context. So, MCP pretty much moved away from keeping an ongoing protocol session and towards independent requests while still giving us a way to handle interactions that need maybe more than one round. Now, the second major change
+
+**[15:11](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=911s)**
+
+in MCP is this idea of MCP tasks and this one pretty much comes from how agents themselves have evolved over the past year. Remember when MCP was first designed, a lot of agent interactions look much closer to normal tool calls. They would be very short-lived. For instance, search something, read something, or just send something, [music] and the answer comes back pretty quickly. But now, in 2026, the scope of agents have become much larger. They take on longer pieces of work. For instance, they can analyze large code bases, process thousands [music] of
+
+**[15:41](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=941s)**
+
+customer conversations, run probably a deep research workflow, or essentially anything that can take sometimes minutes or even hours. And you really don't want these MCP requests be sitting open the entire time waiting for the work to finish, which is why the idea of an MCP task comes in, which is the server can decide if the incoming request should be treated as a task, [music] and instead of returning the final result immediately, it pretty much hands back a task handle, [music] and the client can use that handle to keep checking at
+
+**[16:11](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=971s)**
+
+regular intervals. Now, the third major change is that security and authorization in the protocol became much more stronger recently. Now, as MCP's adoption grew, people started connecting agents to their email, to their code, CRMs, databases, and a lot of other system containing sensitive or private information. So, their identity, credentials, and permissions started mattering a lot more than before. Now, the latest July 2026 spec tightened the authorization model. For instance, clients now have a much stronger way for
+
+**[16:41](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=1001s)**
+
+verifying which authorization server actually issued a credential, >> [music] >> and credentials are also tied to the issuer that created them. And MCP also moved away from having clients dynamically register themselves with every authorization server, and towards [music] client metadata documents, which gave authorization systems a much more predictable way to identify clients. And MCP had this notion of enterprise-managed authorization, but it became much more stable in 2026. [music] And the whole idea of enterprise-managed authorization is that if a company has,
+
+**[17:12](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=1032s)**
+
+say, thousands of employees, the company can define a set of approved MCP servers [music] and centrally monitor this instead of every user having to approve a bunch of servers. So, all of the vetting can be done at a company level. [music] And remember that these authorizations are pretty cool. They're much better than the older versions, but [music] they don't magically solve all of your security problems, but they do strengthen the protocol much more and make it harder for bad actors to come in. Now, the last and fourth shift is that MCP became much more production [music] ready in the past few months and this is a bunch of different updates all
+
+**[17:43](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=1063s)**
+
+together, not one major update, but let's talk about three popular ones. One is this idea of extensions. [music] So, MCP now has a formal extension system. So, instead of putting every new capability directly into the core protocol, developers can put optional capabilities separately and have a modular way of building this. [music] And everything that we went over so far, MCP tasks, MCP apps, and enterprise manager authorization, they all live as extensions. And every server and client doesn't have to support every possible feature, which brings me to the second
+
+**[18:13](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=1093s)**
+
+update, which is MCP apps. So, MCP can now support richer [music] interfaces instead of always returning just text or data. For instance, a server can hand back an interactive [music] interface that a supporting host can render. So, an analytics MCP server, for instance, can return [music] a dashboard or a workflow can return a form or a CRM tool, for example, could return an interactive customer view. So, it's not just text or data anymore. And the third more operational update is around caching and easier request handling. Tool lists and other list responses can
+
+**[18:43](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=1123s)**
+
+now include caching information so that [music] clients don't have to keep fetching the same catalog again and again. All right, so that's about all of the updates. Now, if you kind of step back and look at it from a 10,000 ft view, now the pattern across all of these four changes is the fact [music] that the mindset with which MCP updates are being done is completely different in 2026. In 2025, it was just a standard way in order to connect to external tools and applications. It was pretty early and the whole idea was to just provide people the functionality and in
+
+**[19:13](https://www.youtube.com/watch?v=ro3CiyWcCT0&t=1153s)**
+
+2026 the focus is pretty much shifted into what happens when all of these connections start happening and they start happening at scale and in production style applications where agents are doing longer pieces of work. They're working with much more sensitive data and companies actually depend on this working reliably well so that they can run their operations. Hopefully that answers all of your questions on MCP and you now can understand better how it works. I will see you in the next video with more such deep dives and do subscribe if this kind of content is interesting to you. All the very best.

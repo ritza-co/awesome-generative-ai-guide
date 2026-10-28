@@ -1,0 +1,31 @@
+If you use Claude Code or Codex daily but still burn through tokens and take several back and forths to get one thing done, the problem isn't your prompts. The people getting real work out of these tools operate at five distinct levels. This episode walks through all five, with 16 practical tips drawn from AI research on how these agents actually work.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+I've spent about a decade in AI, previously as an AI scientist and researcher at AWS, and now building an AI native startup in San Francisco, LevelUp Labs, where we help companies and teams go AI native through education, engineering, and strategy.
+
+Every tip here is also an open source checklist on my GitHub (linked below) that you can hand straight to your agent, so you don't need to take notes.
+
+You'll learn how to:
+
+• Audit your context so your agent stops confidently answering from stale or conflicting data
+• Write a short identity file yourself instead of letting the agent bloat it (and cost you more)
+• Show your agent examples of good work and codify them into reusable templates
+• Turn off unused tool connections that quietly eat tokens and reduce accuracy
+• Let the agent interview you before it builds, and make it cite sources to cut hallucination
+• Order long prompts context first, questions last, to save up to 90% with prompt caching
+• Keep quality high on long tasks with one task per chat, pruned context, and compacted progress files
+• Recover a rotting thread by rewinding, forking, or handing off to a fresh chat
+• Set up loops with a clear goal, a check, a stop condition, and memory, so boring work runs on its own
+
+I use running examples throughout from a fictional company, including a context audit across messy company docs, a cold email template built from past examples, and a daily competitor tracking loop that posts changes to Slack.
+
+The core idea is that most people never get past prompt optimization, which is level two. The real gains come from setting up your context, keeping the agent sharp through long tasks, recovering cleanly when it fails, and finally letting it run on its own for work you understand well enough to evaluate.
+
+My GitHub (tips checklist, cheatsheet and resources): https://github.com/aishwaryanr/awesome-generative-ai-guide/blob/main/youtube/claude-code-5-levels.md
+My LinkedIn: https://www.linkedin.com/in/areganti/
+Website: https://levelup-labs.ai/
+Free Newsletter: https://thenuancedperspective.substack.com/
+Free Courses: https://levelup-labs.ai/education
+Instagram: https://www.instagram.com/aish_reganti

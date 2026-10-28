@@ -1,0 +1,40 @@
+Most candidates I interview for AI roles know what RAG, MCP, and tool calling are. What they struggle with is applying those concepts to a real business problem, or explaining what it takes to scale an AI system to production. That skill is AI system design, and it’s what separates the people who get hired from the people who just throw around terms.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+Link to my AI System Design Book: https://maven.com/aishwarya-kiriti/o/a05048
+
+I’ve interviewed hundreds of people for AI roles, first as a tech lead at AWS and now for my own company. In this video I walk through a five-layer framework you can apply to pretty much any production AI system, from scoping the problem to optimizing it once it’s live. I use one of the most common interview problems as the example: an AI customer support agent for an e-commerce company that answers help center questions, looks up orders, creates tickets, and escalates to a human when it’s not sure.
+
+The five layers are scope and assumptions, architecture, observability, production and ops, and optimization. For architecture I use a simple framework I created called KARC: what the system has to know, act on, remember, and how it all coordinates. The whole point is that every piece you add should trace back to an assumption you made about the problem. Interviewers can tell when you’re name-dropping fancy architectures without a reason.
+
+You’ll learn how to:
+
+Scope a problem before you touch the solution, including how much agency the system should have and how to make your assumptions explicit
+Design a starting architecture with KARC, from hybrid RAG for knowledge to tool design to the four types of memory
+Think through permissions, blast radius, failure handling, and trust boundaries for every tool your agent can call
+Decide what to log, which evals to build on top of those logs, and which should run online as guardrails versus offline
+Take a design to production by planning for scale, latency, reliability, freshness, and security
+Optimize an existing system for latency, cost, quality, and specific failure patterns, and know when added complexity (like multi-agent) is actually earned
+
+
+Time Stamps:
+
+01:23 - Layer 1: Scope and assumption
+04:32 - Layer 2: Architecture
+11:10 - Layer 3 Observability
+14:11 - Layer 4 Product and ops
+17:03 - Layer 5: Optimization
+
+
+The bigger point: don’t memorize the customer support architecture. Take the questions from each layer, apply them to a different use case, and practice. I’ve also used this same framework on nine other common AI system design problems in a book, with solutions on my GitHub, so you can see how it plays out across different systems.
+
+Resources mentioned in this episode:
+
+My LinkedIn: https://www.linkedin.com/in/areganti/
+Website: https://levelup-labs.ai/
+Free Newsletter: https://thenuancedperspective.substack.com/
+Free Courses: https://levelup-labs.ai/education
+My GitHub (AI resources): https://github.com/aishwaryanr/awesome-generative-ai-guide
+Instagram: https://instagram.com/aish_reganti

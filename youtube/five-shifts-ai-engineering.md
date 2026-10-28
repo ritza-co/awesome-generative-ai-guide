@@ -1,5 +1,7 @@
 # AI Engineering Has Changed: The 5 Concepts You Need in 2026
 
+**Published YouTube description:** [Read the full description](descriptions/five-shifts-ai-engineering.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=CoIxe4aGCpg) · 2026-08-27
 
 ![The 5 shifts in AI engineering, and how each layer evolved from the previous one](images/five-shifts-ai-engineering.png)

@@ -1,5 +1,7 @@
 # I Automate My Entire Company With Codex (Full System)
 
+**Published YouTube description:** [Read the full description](descriptions/codex-operating-system.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=bHfoEBO2AP4) · 2026-07-13
 
 ![What we cover in this video](images/codex-operating-system.png)

@@ -1,0 +1,3 @@
+Some of Silicon Valley's fastest growing startups have moved away from LeetCode-style interviews. They check 4 things: architecture, implementation choices, edge cases and verification.
+
+#CodingInterview #AIEngineering #SoftwareEngineering

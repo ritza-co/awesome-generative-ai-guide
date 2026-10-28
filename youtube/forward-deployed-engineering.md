@@ -1,5 +1,7 @@
 # Forward Deployed Engineer: Hype, Reality & a Realistic Roadmap
 
+**Published YouTube description:** [Read the full description](descriptions/forward-deployed-engineering.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=9MfwdJUTKzw) · 2026-09-11
 
 ![What we cover in this video](images/forward-deployed-engineering.png)

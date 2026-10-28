@@ -1,0 +1,37 @@
+MCP is changing fast in 2026. ChatGPT users’ MCP calls reportedly multiplied 98x between January and August, and companies report 500%+ growth in MCP server usage. If you’re a beginner confused by all the updates and wondering where to start, this is the one video to watch. I take you from the foundations to the current state of MCP, so you can explain it clearly to anyone, including what changed this year.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+I’ve worked in AI for over a decade, with patents and publications at top AI conferences, and I was a tech lead at AWS building production systems for large enterprises. Now I run my own company, Level Up Labs. I start with what MCP is and why it exists. APIs have been around for years, so why do we need another layer? APIs were built for developers writing deterministic software, and agents need a lot more context before they can use them reliably. MCP standardizes that middle layer.
+
+From there I walk through how it works under the hood (host, client, and server), using one running example: telling an agent to email everyone registered for tomorrow’s event. I also clear up the terms people constantly mix up. MCP, APIs, skills, and plugins aren’t competing ideas. They’re layers of the same system.
+
+Then the part most people are confused about: what actually changed in 2026. There are four big shifts every builder working with MCP should know.
+
+Time stamps:
+00:49 - Explain what MCP is, why it exists, and what it adds on top of regular APIs;
+05:03 - How MCP actually works under the hood;
+08:58 - MCP Versus API's, Skills, and Plugins;
+12:02 - What changed in MCP in 2026;
+
+You’ll learn how to:
+→ Explain what MCP is, why it exists, and what it adds on top of regular APIs;
+→ Understand the host, client, and server architecture and the original MCP lifecycle (initialization, discovery, request and response, sessions);
+→ Tell the difference between APIs, MCP, skills, and plugins, and how they stack together;
+→ See why MCP went stateless, what that means for scaling, and how multi round trip requests (MRTR) handle a server that needs more input mid-request;
+→ Understand MCP Tasks and how long-running agent work gets handled without keeping requests open for hours;
+→ Know what tightened on the security and authorization side, including enterprise-managed authorization, and why it happened;
+→ Spot the production-readiness updates: the extension system, MCP Apps, caching, and the new 12-month deprecation window;
+
+
+The bigger point: in 2025, MCP was about giving agents a standard way to connect to tools. In 2026, it’s about making those connections robust at scale, with longer-running work, more sensitive data, and companies depending on it to run real operations.
+
+Resources mentioned in this episode:
+
+My LinkedIn: https://www.linkedin.com/in/areganti/
+Website: https://levelup-labs.ai/
+Free Newsletter: https://thenuancedperspective.substack.com/
+Free Courses: https://levelup-labs.ai/education
+My GitHub (AI resources): https://github.com/aishwaryanr/awesome-generative-ai-guide
+Instagram: https://instagram.com/aish_reganti

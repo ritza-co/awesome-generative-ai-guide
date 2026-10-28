@@ -1,0 +1,39 @@
+Everyone running local AI on their own hardware will tell you it's private, it's secure, and it's the future but almost nobody explains what it actually takes to get there or what breaks when you try to scale it. I'm an AI researcher and applied scientist, previously at AWS, now running my own AI company, and in this episode I break down what local AI really is, why it exploded in popularity this year, and whether it's actually worth it for you or your company.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+The confusion starts with a basic misunderstanding: running an app locally isn't the same as running AI locally. Every AI product has two layers — the model (the brain) and the harness (the scaffolding around it, like memory, file access, code execution). If you're running Claude Code or ChatGPT on your desktop but it's calling a cloud API, that's not local AI. For it to count, both the model and the harness need to live on your own machine. I walk through why that distinction matters and why it's the thing most people get wrong.
+
+I also get into why this trend specifically took off in the past few months — it's not one reason, it's two that collided: rising costs and shrinking control over frontier models (including a real incident where access to a major model was suspended overnight for an entire group of users), and open-source models finally closing the performance gap with closed ones. Each played a role, and neither fully explains it alone.
+
+Chapters
+
+01:05 - What Local AI actually is
+04:09 - Why it got popular
+08:53 - How to run one yourself
+10:13 - What actually goes wrong when you run it at scale.
+15:28 - How companies at thinking about it
+
+
+I also cover the real bottleneck most people hit — not setup, but model size and memory — and share a free tool I built to help you figure out what hardware you'd actually need for your use case.
+
+The bigger point of this episode: local AI isn't going to fully replace frontier models, and it's not supposed to. The real shift is toward hybrid systems — frontier models for orchestration and the hard stuff, local models for repetitive, high-volume, or private tasks. Understanding where that line sits is what actually matters, for individuals and companies alike.
+
+
+Resources mentioned in this episode:
+
+"What do you want Local AI to do" link: https://localai.levelup-labs.ai/
+
+My LinkedIn: https://www.linkedin.com/in/areganti/
+
+Website: https://levelup-labs.ai/
+
+Free Newsletter: https://thenuancedperspective.substack.com/
+
+Free Courses: https://levelup-labs.ai/education
+
+My GitHub (AI resources): https://github.com/aishwaryanr/awesome-generative-ai-guide
+
+
+Instagram: https://www.instagram.com/aish_reganti

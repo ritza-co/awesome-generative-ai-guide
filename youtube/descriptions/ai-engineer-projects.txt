@@ -1,0 +1,28 @@
+Projects, datasets, tool stacks, and the prompt from the video: https://github.com/aishwaryanr/awesome-generative-ai-guide/blob/main/youtube/ai-engineer-projects.md
+
+If you’re applying for AI engineering roles, listing RAG, agents, and MCP on your resume and building a few starter projects isn’t enough anymore. Hiring managers want to see the decisions you made, the trade-offs you weighed, and whether what you built looks like what companies are actually shipping.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+I’ve interviewed over 300 AI engineers, first as a tech lead at AWS and now for my own company, Level Up Labs. These are the projects I wish I’d seen on more resumes. I went through 2,000+ AI engineer job listings to see which skills companies are hiring for, then distilled about 1,200 AI engineering blogs from top companies to see how those skills get applied in the real world. The result is six projects in increasing order of difficulty. By the time you finish them, you have a portfolio that gets your resume picked, and you’ve built the skills interviewers are looking for.
+
+For every project, I cover what to build, which dataset to use, the tool stack, and how to evaluate it. Evals show up in every project on purpose, because knowing what to measure is one of the most in-demand skills in AI engineering right now. I also cover how to talk about each project on your resume and in interviews, since the insights you gained while building are what interviewers want to hear.
+
+The six projects:
+
+00:54 - Project 1 → "Document intelligence pipeline": turn messy documents into clean structured records, and learn to weigh OCR against multimodal models on cost and performance
+04:34 - Project 2 → "Enterprise search system": not another generic RAG chatbot, but one built the way an enterprise would build it, with chunking, hybrid retrieval, re-ranking, and enforced citations
+08:17 - Project 3 →  "Conversation intelligence system": transcription, speaker diarization, and structured summaries, with an optional real-time and voice-out version
+11:31 - Project 4 → "Sovereign AI Engine": host an open-weight model yourself and try fine-tuning (LoRA/QLoRA), quantization, and inference optimization against a frontier API baseline
+15:20 - Project 5 → "Multi-step autonomous agent": a ReAct-style support agent with tool calling, tracing, guardrails, and human-in-the-loop design
+18:11 - Project 6 →  "Work backwards": reverse-engineer the problems your target companies are solving and build something specific for them (the prompt I use is on my GitHub)
+
+The bigger point: building is getting cheaper every month, and everyone knows AI can generate a lot of code. What it can’t do is judgment and decision-making, and that’s what companies are hiring for.
+
+
+My LinkedIn: https://www.linkedin.com/in/areganti/
+Website: https://levelup-labs.ai/
+Free Newsletter: https://thenuancedperspective.substack.com/
+Free Courses: https://levelup-labs.ai/education
+Instagram: https://instagram.com/aish_reganti

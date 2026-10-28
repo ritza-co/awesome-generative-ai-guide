@@ -1,5 +1,7 @@
 # Jev Explained in 12 mins (Without the Hype)
 
+**Published YouTube description:** [Read the full description](descriptions/jev-explained.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=OsPma0BWq9c) · 2026-09-24
 
 ## In this video

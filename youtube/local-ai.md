@@ -1,5 +1,7 @@
 # You need to learn Local AI in 2026
 
+**Published YouTube description:** [Read the full description](descriptions/local-ai.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=KJgAn4CZNso) · 2026-10-01
 
 ![What we cover in this video: what local AI actually is, why it got popular, how to run one yourself, the problems, and what companies are doing](images/local-ai.png)

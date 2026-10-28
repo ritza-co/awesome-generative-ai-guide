@@ -1,5 +1,7 @@
 # Is Learning to Code Still Worth It in 2026? | Ex-Amazon AI Scientist
 
+**Published YouTube description:** [Read the full description](descriptions/learning-to-code.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=x5PBvHYt6UE) · 2026-07-21
 
 ![What we cover in this video](images/learning-to-code.png)

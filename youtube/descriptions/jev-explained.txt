@@ -1,0 +1,33 @@
+Everyone's suddenly talking about a model called Jev. People are calling it 200x faster and 500x cheaper than a normal LLM and some are even calling it the end of expensive AI models. So I wanted to actually dig into what it is, instead of just following the hype.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+Quick version: Jev isn't a language model in the way GPT or Claude are. It doesn't generate text token by token. It's built by a company called Typesafe, and instead of writing sentences, it just picks from a fixed set of outputs: a choice, a score, or a probability. That's it. That's the whole thing. And because the output space is so small, it can run way faster and way cheaper than a regular LLM, since it's not stuck generating one token at a time.
+
+I go through what it can actually do (choosing between options, scoring something, or estimating a probability), show some real examples people have built with it such as browser automation, spreadsheet classification, an "AI slop" detector for websites and then get into where it falls apart. Typesafe's own docs admit it struggles with arithmetic, counting, multi-step reasoning. So this isn't a general-purpose model replacement. It's more like a very fast, very narrow decision-maker that sits next to your LLM, not instead of it.
+
+Chapters:
+
+00:42 - What Jev actually is, and how it's different from a regular LLM
+01:43 - The three things it can do — choice, score, probability
+02:33 - How it compares to a traditional LLMs classifier (and why it doesn't need retraining for new tasks)
+04:01 - Real use cases people are building right now
+06:08 - Where it breaks down — reasoning, math, anything that needs actual generation
+07:54 - Why the future probably looks like LLMs + Jev working together, not one replacing the other
+08:36 - Jev + AI Evals real use case for builders
+11:10 - Set up your Jev's account
+
+I also show how to set it up yourself at typesafe.ai if you want to play around with it — there's even an agent skill file that scans your codebase and suggests where you could swap in Jev to cut costs.
+
+Bottom line: Jev isn't replacing LLMs. It's a different kind of tool for a narrower kind of problem, and knowing where that line is matters more than the hype either way.
+
+Links and Resources:
+Made with Jev — madewithjev.com
+Typesafe — typesafe.ai
+AI Engineering Handbook: https://maven.com/aishwarya-kiriti/o/d4b008
+My LinkedIn: https://www.linkedin.com/in/areganti/
+Website: https://levelup-labs.ai/
+Free Newsletter: https://thenuancedperspective.substack.com/
+Free Courses: https://levelup-labs.ai/education
+Instagram: https://www.instagram.com/aish_reganti

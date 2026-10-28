@@ -1,0 +1,7 @@
+Context compaction is the key to maintaining memory in long conversations. Learn how to prevent your AI from forgetting instructions.
+
+As AI models process more information, the limited context window often leads to data loss. This video breaks down how context compaction helps preserve critical decisions and user instructions over long sessions.
+
+We analyze practical techniques like sliding windows, observation masking, and summarization. Understanding these methods is essential for anyone building reliable AI agents that need to maintain state without losing track of earlier inputs.
+
+Subscribe for more practical AI engineering breakdowns.

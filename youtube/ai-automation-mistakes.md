@@ -1,5 +1,7 @@
 # Building AI Agents That Actually Work
 
+**Published YouTube description:** [Read the full description](descriptions/ai-automation-mistakes.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=dqJs-DmeLx4) · 2026-08-04
 
 ## In this video

@@ -1,5 +1,7 @@
 # AI Engineering Explained in 17 mins | The Ultimate Beginner’s Guide
 
+**Published YouTube description:** [Read the full description](descriptions/ai-engineering.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=L6TSmylZT2g) · 2026-07-01
 
 ![What we cover in this video](images/ai-engineering.png)

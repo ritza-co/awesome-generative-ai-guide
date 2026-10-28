@@ -1,0 +1,7 @@
+A million token context window isn't a guarantee of total recall.
+
+Researchers found that AI models struggle to retrieve specific commands as context length increases. This performance drop highlights a critical limitation for anyone building with long-context LLMs.
+
+Learn how to test your own agent reliability before scaling to production.
+
+Subscribe for more practical AI engineering breakdowns.

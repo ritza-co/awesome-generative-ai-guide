@@ -1,0 +1,55 @@
+Half of AI Twitter will tell you that RAG is dead, killed off by giant context windows and better models. I've spent a decade building AI systems, including as a tech lead at Amazon and now running my own AI company, and I've watched teams rip out retrieval based on that headline and regret it. In this episode I break down what "RAG is dead" actually means, why it's mostly wrong, and what retrieval is really turning into.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+The claim isn't one argument, it's three, and they get tangled together until none of them make sense. One says context windows are now big enough that you can skip retrieval and just paste everything in. One says the old one-shot RAG is dead. One says vector databases were never the answer. Each of these has a grain of truth, and each falls apart the moment you look at what actually happens in production. I take them one at a time so you can tell which part of "RAG is dead" is real and which part is just noise.
+
+I also get specific about what retrieval is evolving into, because that's the part the headlines miss. RAG isn't disappearing, it's growing up, from a single embedding lookup into a knowledge runtime you can actually trust: one that cites its sources, handles contradictions, signals its own confidence, and respects who's allowed to see what. That shift is the real story, and it's the thing worth building toward.
+
+You'll learn how to:
+
+• Understand what RAG actually is: retrieving the right chunks of a knowledge base before the model generates, so it stops guessing past its training
+• See why bigger context windows don't kill retrieval, thanks to "lost in the middle" accuracy drops and the cost of resending your whole corpus every call
+• Tell the difference between naive one-shot RAG (fading) and agentic retrieval that searches in multiple steps (rising)
+• Stop equating retrieval with vector databases, and know when keyword/grep, knowledge graphs, or hybrid retrieval is the better tool
+• Recognize the failure modes that make people declare RAG dead, and what actually causes them
+• Build toward a knowledge runtime with sourcing, contradiction handling, confidence signals, and access controls
+
+I also get into why "just use a bigger context window" is the advice that quietly runs up your costs and hurts your accuracy, and why the teams treating retrieval as a solved problem are the ones who get burned.
+
+The bigger point of this episode is that RAG isn't dying, it's becoming infrastructure. The models will keep getting better and the context windows will keep getting bigger. But the people who understand how to retrieve the right information, from the right place, in a way you can audit and trust, are the ones who'll build AI systems that actually hold up.
+
+00:00 Is RAG Dead
+00:44 How RAG Works
+01:39 Chunking and Vector Search
+04:37 Why the Backlash Started
+05:03 Camp One: Context Windows
+07:40 Camp Two: Agentic Retrieval
+10:05 Camp Three: Beyond Vectors
+12:54 Knowledge Runtime Future
+
+Resources mentioned in this episode:
+
+HD version of this video’s cheat sheet: https://github.com/aishwaryanr/awesome-generative-ai-guide/blob/main/youtube/is-rag-dead.md
+
+My LinkedIn: https://www.linkedin.com/in/areganti/
+
+Website:
+
+https://levelup-labs.ai/
+
+Free Newsletter:
+
+https://thenuancedperspective.substac...
+
+Free Courses:
+
+https://levelup-labs.ai/education
+
+My GitHub (AI resources):
+
+https://github.com/aishwaryanr/awesom...
+
+
+Instagram: https://instagram.com/aish_reganti

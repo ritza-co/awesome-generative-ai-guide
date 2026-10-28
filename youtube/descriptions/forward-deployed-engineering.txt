@@ -1,0 +1,27 @@
+• A million dollars a year that's what people say the hottest job in AI is paying right now. It's called Forward Deployed Engineering, and every AI company is racing to hire for it. So I pulled over 1,000 live job listings straight from the companies actually hiring for this role to find out how much of it is real.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+This episode breaks down what the role actually is, where it came from, the skills it really asks for grounded in live listings, and busts the four biggest myths around it — before walking through a full roadmap to break in.
+
+You'll learn:
+
+• Why FDE exists — how AI products demo well but break in production, and why companies started shipping engineers alongside the software instead of building fully self-serve products.
+• What the salary data actually shows, comparing FDE listings against 800 ordinary AI engineering roles at similar companies.
+• Whether FDE is really the highest paying job in AI, a brand new stack to learn, a rebranded solutions consultant role, or something else entirely.
+• How much experience you actually need — the real median, and why 40% of listings state no requirement at all.
+• The three skill layers behind the role — software engineering, AI engineering, and the forward-deployed layer itself — and exactly what to learn in each.
+• What a week in this job actually looks like: discovery calls, building in environments you don't control, running enablement sessions, and documentation.
+
+The core idea is that forward deployed engineering is a breadth role, not a depth role. It's a mix of a strategist, a product manager, and an engineer, and if you already have some software engineering and AI engineering under your belt, you're closer to qualified than you think.
+
+Resources:
+Job board (1,000+ live FDE listings, salary data, skill maps): fde.levelup-labs.ai
+HD Cheatsheet / GitHub: https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main/youtube
+AI Engineering Handbook: https://maven.com/aishwarya-kiriti/o/d4b008
+My LinkedIn: https://www.linkedin.com/in/areganti/
+Website: https://levelup-labs.ai/
+Free Newsletter: https://thenuancedperspective.substack.com/
+Free Courses: https://levelup-labs.ai/education
+Instagram: https://www.instagram.com/aish_reganti

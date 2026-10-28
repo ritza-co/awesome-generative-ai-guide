@@ -1,0 +1,51 @@
+Nvidia's CEO says nobody needs to learn to code anymore. Engineers inside AI labs are speculating that software engineering could be gone within a year. I've spent a decade in AI research, I run an AI native company in San Francisco, and I interview engineers every week, so in this episode I look at what's actually happening on the ground instead of what's being predicted online.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+The pattern isn't new. The same "coding is dead" claim showed up with COBOL in 1959, with fourth generation languages in the 1980s, and with no code tools in the 2010s. Each time, a layer of coding was supposed to disappear. Each time, the skill moved one level up, and more people ended up building software, not fewer. I break down why this AI wave is following the same pattern, and what that actually means for whether learning to code is still worth it in 2026.
+
+I also get specific about what coding looks like now that agents like Codex and Claude Code can write most of the code themselves. The real skill has shifted from writing lines of code to writing a clear spec before the agent starts, and knowing how to review what comes back the way a senior engineer would.
+
+You'll learn how to:
+
+• Understand the "one level up" rule and why every prediction of coding's death has been wrong for over 60 years
+• Use the builder's loop: reverse building open source projects, borrowing engineering playbooks, and going deep in one domain
+• Write a six field spec (goal, inputs, outputs, edge cases, definition of done, constraints) before handing anything to an agent
+• Catch what your agent gets wrong by reviewing its architecture, coding patterns, and logic before you ship
+• Turn a code review conversation into tests that actually catch the agent's own mistakes
+• Recognize why engineering interviews have shifted from "can you write this" to "can you explain why you built it this way"
+• Decide what coding actually means for you in 2026, and what to learn first if you're starting from zero
+
+I also share what's changed inside my own hiring process, including a candidate who submitted a clean, fully tested, AI built repo and still didn't get the job, because they couldn't explain a single decision inside it.
+
+The bigger point of this episode is that coding isn't disappearing. It's turning into something closer to judgment than typing. The tools will keep changing and nobody knows which one wins next. But the people who can write a clear spec, review an agent's work like a senior engineer, and go deep in a real domain are the ones who'll keep mattering.
+
+00:00 Is Coding Dead in 2026? (What's Actually Happening)
+
+00:27 The "One Level Up" Rule: Why Coding Never Dies
+
+03:10 How to Learn to Code with AI: The Builder's Loop
+
+05:57 Spec-Driven Development: Write a Spec Before Your AI Agent Builds
+
+09:52 How to Review AI-Generated Code (Like a Senior Engineer)
+
+Resources mentioned in this episode:
+
+Agent Skills (Google engineering principles packaged for coding agents): https://github.com/addyosmani/agent-skills
+
+12 Factor Agents (production practices for reliable AI agents): https://github.com/humanlayer/12-factor-agents
+
+My LinkedIn: https://www.linkedin.com/in/areganti/
+
+Website: https://levelup-labs.ai/
+
+Free Newsletter: https://thenuancedperspective.substack.com/
+
+Free Courses: https://levelup-labs.ai/education
+
+My GitHub (AI resources): https://github.com/aishwaryanr/awesome-generative-ai-guide
+
+
+Instagram: https://www.instagram.com/aish_reganti

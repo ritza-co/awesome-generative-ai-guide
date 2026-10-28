@@ -1,0 +1,58 @@
+Most people think OpenAI Codex is just another AI coding assistant.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+Ironically, the biggest productivity gains don't come from Codex itself.
+
+After spending a decade building AI systems and leading AI teams, I've learned that the best AI workflows aren't built around a single tool. They're built around an operating system that makes any AI agent dramatically more effective.
+
+In this episode, I break down the four-layer AI operating system we use to run a multi-million dollar AI-native company. You'll learn how to transform Codex from a chatbot into a true AI coworker using Knowledge, Connections, Repetition, and Improvement.
+
+You'll learn how to:
+
+• Build a knowledge base that gives Codex real context about your work
+• Organize documents into a searchable AI wiki instead of scattered files
+• Connect Codex to your email, calendar, Canva, Linear, and other tools
+• Turn repetitive prompts into reusable AI skills and plugins
+• Automate recurring workflows with AI agents and goal-based automation
+• Use evaluations (evals) to improve AI quality before outputs reach you
+• Build feedback loops that make your AI workflows smarter over time
+• Run multiple AI threads in parallel to compare and improve results
+• Stay in control while safely connecting AI to your business systems
+• Create an AI operating system that works with Codex—and any future AI tool
+
+I also share practical examples from running a production AI business, including knowledge management, workflow automation, AI memory, agent skills, feedback systems, and the frameworks we've used to automate real work across our team.
+
+Most importantly, you'll learn that building with AI isn't about mastering one model or one platform.
+
+It's about building a system that keeps getting smarter no matter which AI tool you use.
+
+Because the biggest advantage won't come from using the newest AI assistant.
+
+It will come from building an operating system that makes every AI tool exponentially more valuable.
+
+00:00 How Do You Run a Company on Codex? (The 4-Layer System)
+
+00:47 Layer 1: Build an AI Knowledge Base (Wiki) for Codex
+
+03:56 Layer 2: Connecting Codex to Your Tools (Email, Linear, Canva)
+
+06:33 Layer 3: Codex Skills, Plugins & Automations
+
+10:34 Layer 4: Evals & Feedback Loops That Improve Your AI
+
+Link to the handbook: https://maven.com/aishwarya-kiriti/o/d4b008
+
+My LinkedIn: https://www.linkedin.com/in/areganti/
+
+Website: https://levelup-labs.ai/
+
+Free Newsletter: https://thenuancedperspective.substack.com/
+
+Free Courses: https://levelup-labs.ai/education
+
+My GitHub (AI resources): https://github.com/aishwaryanr/awesome-generative-ai-guide
+
+
+Instagram: https://www.instagram.com/aish_reganti

@@ -1,0 +1,31 @@
+You will find the HD Cheatsheet & other resources from the video here →
+https://github.com/aishwaryanr/awesome-generative-ai-guide/blob/main/youtube/five-shifts-ai-engineering.md"
+
+
+AI engineering has gone through five major shifts in just the past few years: prompt engineering, context engineering, harness engineering, loop engineering, and graph engineering. This episode connects all five into one story, so you know exactly where each one came from and where the next new term will fit.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+I've spent over a decade as an AI researcher, most recently as an AI scientist and tech lead at AWS building production systems for large enterprises. I now run LevelUp Labs, where we help mid market and enterprise companies go AI native.
+
+You'll learn how to:
+
+• See why prompt engineering became less important once models got better at understanding intent on their own.
+• Understand what context engineering actually solves: limited context windows, statelessness, and context rot.
+• Recognize what harness engineering adds on top of context, including file systems, sandboxes, observability, and access boundaries.
+• Set up your first agent loop in Claude Code or Codex, with a trigger, a goal, a check, memory between runs, and a stop condition.
+• Build a graph based workflow with parallel research agents and a separate critic agent that catches mistakes before they reach you.
+• Tell the difference between a genuinely new AI engineering problem and a rebrand of an old one.
+• Use two simple questions to evaluate any new term that shows up in this space next.
+
+I also walk through two live examples inside Claude Code: a simple price tracking loop that checks a product page every two hours and messages me on Slack when the price drops, and a graph based research workflow that runs three researchers in parallel and hands their work to a critic agent before it reaches me. Both are meant to be simple enough to copy, not just watch.
+
+AI is going to keep producing new terms every few months, and it's easy to feel like you need to relearn everything each time. The two questions worth asking about any new one are what problem it came from, and what it controls that the last one didn't. Most of the time that tells you whether it's a genuinely new layer or just an optimization on something you already understand.
+
+My LinkedIn: https://www.linkedin.com/in/areganti/
+Website: https://levelup-labs.ai/
+Free Newsletter: https://thenuancedperspective.substack.com/
+Free Courses: https://levelup-labs.ai/education
+My GitHub (AI resources): https://github.com/aishwaryanr/awesome-generative-ai-guide
+Instagram: https://www.instagram.com/aish_reganti

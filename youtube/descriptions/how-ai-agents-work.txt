@@ -1,0 +1,50 @@
+Most people think AI agents are powerful because of the tools they use.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+In reality, the tools matter far less than understanding the system underneath them.
+
+After spending a decade building AI systems and running a company powered by agents, I've learned that nearly every AI agent follows the same blueprint. The products change. The principles don't.
+
+In this episode, I break down the five components behind every effective AI agent: Identity, Tools, Skills, Memory, and Trust.
+
+You'll learn how to:
+
+• Build an agent that understands how you work
+• Connect tools safely and avoid costly mistakes
+• Turn repetitive tasks into reusable workflows
+• Use memory to improve outputs over time
+• Automate work without losing control
+• Set the right trust level for every task
+• Decide what should—and shouldn't—be automated
+
+I also share practical lessons from deploying agents inside real businesses and the frameworks that separate advanced operators from casual users.
+
+Most importantly, you'll learn that mastering AI isn't about chasing the latest tools.
+
+It's about understanding the fundamentals that stay the same while everything else changes.
+
+Because the biggest advantage won't come from finding the next AI agent.
+
+It will come from becoming the kind of operator who can use any of them.
+
+00:00 How Do AI Agents Actually Work? (The 4 Components)
+
+01:42 Component 1: The Identity File (How to Set It Up)
+
+04:57 Component 2: Connecting Tools Safely (Gmail Scopes & Permissions)
+
+06:43 Component 3: Skills e Triggers (Make Your Agent Sharper)
+
+09:43 Component 4: Agent Memory That Compounds
+
+11:35 Bonus: The 4 Trust Levels (Own, Consult, Augment, Automate)
+
+Links:
+My LinkedIn: https://linkedin.com/in/areganti
+Website: https://levelup-labs.ai/
+Free Newsletter: https://thenuancedperspective.substack.com
+Free Courses: https://levelup-labs.ai/education
+My GitHub (AI resources): https://github.com/aishwaryanr/awesome-generative-ai-guide
+Instagram: https://instagram.com/aish_reganti/?hl=en

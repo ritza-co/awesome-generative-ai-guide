@@ -46,3 +46,7 @@ A harness is only as good as your ability to tell it is working, and to catch it
 ---
 
 **You can now:** use an agent harness fluently, assemble your own from tools, memory, context, and a loop, and evaluate it. Keep going with the [AI Agents topic](../topics/agents.md), the [Agent Builder path](agent-builder.md), and the living [Agentic Search and Retrieval research table](../research_updates/agentic_search_retrieval_table.md).
+
+## Build along with NS Work
+
+Use the [company-harness walkthrough](../youtube/build-your-own-harness.md) and [runnable NS Work code](../youtube/code/ns-work-harness/README.md) to configure Context, Actions, Boundaries, and Persistence around a model.

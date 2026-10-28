@@ -1,5 +1,7 @@
 # Is RAG Dead?
 
+**Published YouTube description:** [Read the full description](descriptions/is-rag-dead.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=FJQTT2B-imk) · 2026-08-18
 
 ![What we cover in this video](images/is-rag-dead.png)

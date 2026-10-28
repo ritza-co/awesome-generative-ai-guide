@@ -1,5 +1,7 @@
 # Make Claude Code 10x Better and Cheaper: 16 Research-Backed Tips
 
+**Published YouTube description:** [Read the full description](descriptions/claude-code-5-levels.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=quU2MM2k45A) · 2026-09-03
 
 ![The 5 levels of agentic workflows, 16 practical tips for Claude Code and Codex](images/claude-code-5-levels.png)

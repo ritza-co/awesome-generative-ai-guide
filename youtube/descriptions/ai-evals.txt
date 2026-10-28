@@ -1,0 +1,32 @@
+Free AI Evals Course : https://github.com/aishwaryanr/awesome-generative-ai-guide/blob/main/free_courses/ai_evals_for_everyone/README.md
+
+🚀Get 3 months of Arize AX Pro Free: https://app.arize.com/auth/join?utm_source=youtube&utm_medium=video&utm_campaign=ai-evals-video&utm_content=aishwarya-nr
+
+
+
+Building an agent is the easy part! Anyone can get one working in a day. The hard part is making it hold up in production, and the number one skill for that is AI evals. This applies whether you're an engineer, a PM, or a founder, and it's also one of the most misunderstood topics in AI interviews.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+I've spent about a decade in AI, previously as an AI scientist and researcher at AWS, and now building an AI native startup in San Francisco, LevelUp Labs, where we help companies and teams go AI native through education, engineering, and strategy.
+
+This episode breaks down what AI evals actually are and why they look so different from traditional software testing, the difference between model evals and product evals, the three ways to build evals and when to use each, and a full walkthrough of building your first eval from scratch using a fictional customer support agent (QuickCart) — including a real escalation check built with an LLM judge in Arize.
+
+The core idea: evals aren't a build-once-and-forget system. You build them against simulated behavior before launch, then keep calibrating them against real user behavior once you're live — that loop never really stops.
+
+
+By the end of this video you'll know:
+
+00:00 – Why AI products can't be tested like normal software
+04:55 – Model evals vs. product evals (and why benchmarks like MMLU Pro aren't enough)
+07:56 – The three ways to build evals: human, code-based, and LLM judges
+10:53 – Live walkthrough: building your first eval in Arize
+13:31 – Finding the real problem through error analysis
+15:30 – Writing rubrics and running your first LLM judge
+
+My LinkedIn: https://www.linkedin.com/in/areganti/
+Website: https://levelup-labs.ai/
+Free Newsletter: https://thenuancedperspective.substack.com/
+Free Courses: https://levelup-labs.ai/education
+Instagram: https://www.instagram.com/aish_reganti

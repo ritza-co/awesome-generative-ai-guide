@@ -82,6 +82,9 @@ Everyone starts with the shared **[GenAI Interview Questions](interview_prep/60_
 
 Newest first:
 
+- **Build your own company harness:** the NS Work notebook and local application are available for the October 29, 2026 video. ([Guide and code](youtube/build-your-own-harness.md))
+- **AI system design:** the 5-layer video guide links to 10 worked cases with runnable code. ([Video guide](youtube/ai-system-design.md))
+
 - **OpenClaw Mastery for Everyone** is live with certification. ([Course](free_courses/openclaw_mastery_for_everyone/README.md))
 - **AI Evals for Everyone** is live with certification. ([Course](free_courses/ai_evals_for_everyone/README.md))
 - **State of AI 2025 Report** published, with its own build pipeline. ([Report](research_updates/state_of_ai_2025_report/README.md))

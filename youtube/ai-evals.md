@@ -1,5 +1,7 @@
 # The Most Important Skill for AI Engineers: Evals Explained
 
+**Published YouTube description:** [Read the full description](descriptions/ai-evals.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=MltkRz94SWA) · 2026-09-17
 
 ![Evals, the #1 skill in AI engineering: why evals matter, model evals vs product evals, the 3 ways to build evals, building your first eval, what the judge checks, and how evals work in production](images/ai-evals.png)

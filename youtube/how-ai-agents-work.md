@@ -1,5 +1,7 @@
 # How to Use AI Agents Better Than 99% of People | Ex-Amazon AI Scientist
 
+**Published YouTube description:** [Read the full description](descriptions/how-ai-agents-work.txt)
+
 [Watch on YouTube](https://www.youtube.com/watch?v=StlKtZLyxw0) · 2026-06-24
 
 ![What we cover in this video](images/how-ai-agents-work.png)

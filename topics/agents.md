@@ -36,3 +36,7 @@ Agents that plan, use tools, hold memory, and coordinate: single-agent and multi
 ---
 
 Related topics: [RAG](rag.md) · [Evaluation](evaluation.md) · [Safety and Security](safety-security.md). Paths: [Agent Builder](../paths/agent-builder.md). Journeys: [Build](../journeys/build.md) · [Use](../journeys/use.md). Back to the [repository index](../README.md#browse-by-topic).
+
+## Build a company harness
+
+[NS Work](../youtube/build-your-own-harness.md) includes the cumulative notebook and local application for Context, Actions, Boundaries, and Persistence. Start with the [code setup](../youtube/code/ns-work-harness/README.md).

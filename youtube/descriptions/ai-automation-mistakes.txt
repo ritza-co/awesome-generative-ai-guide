@@ -1,0 +1,43 @@
+Half the internet will tell you that you can automate your entire company in a weekend. I've spent 10 years building AI applications, including as a tech lead at Amazon and now at my own startup, and I've watched people burn hundreds of hours believing that. In this episode I break down the four mistakes that waste the most time when you start automating real work with AI agents, and how to avoid each one.
+
+🔔 Join our next Applied AI cohort, taught by me and an OpenAI lead. Use YT25 for 25% off:
+https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=YT25
+
+These aren't beginner mistakes. They're the ones smart teams make precisely because the hype sounds reasonable. The promise is that you point an agent at a workflow and walk away. What actually happens is you automate the wrong thing, expect it to be perfect on day one, assume you can stop paying attention, and launch everything at once until you're firefighting. Every one of these is avoidable once you see the pattern.
+
+I get specific about how to choose what to automate in the first place, because most of the wasted effort happens before a single agent runs. The real skill isn't building the automation, it's scoring the work honestly: how often it runs, what a mistake actually costs, and how often the steps change underneath you. Some work should never be automated at all, and knowing which is the difference between a system that saves you time and one that quietly creates more.
+
+You'll learn how to:
+
+• Score any workflow for automation using three signals: frequency, cost of error, and how often the steps change
+• Spot the work that needs your personal voice, and either codify it with examples or leave it manual
+• Move an automation through the Consult to Augment to Automate path instead of expecting day-one perfection
+• Log errors and improve incrementally (Kaizen) rather than scrapping automations that stumble early
+• Set up every automation with an owner, a review cadence, tripwires, and human sign-off where the stakes are high
+• Avoid the firefighting trap by launching gradually and treating "how many can I keep healthy" as the real limit
+• Understand why humans directing AI get more valuable as the tools get better, not less
+
+I also get into why the constraint on automation was never the technology. It's how many automations you can actually keep healthy at once, and why teams that ignore that end up worse off than when they started.
+
+The bigger point of this episode is that automating work with AI isn't about replacing yourself. It's about knowing exactly what to hand off, what to keep, and how to stay in the loop on the things that matter. The tools will keep getting better. The people who know where to point them are the ones who'll get the most out of them.
+
+00:00 Can AI Agents Run Your Business Alone?
+01:15 How to Know What to Automate With AI
+05:13 Why Your First AI Automation Won't Work
+08:23 Why AI Automation Still Needs Human Oversight
+11:10 Why You Shouldn't Automate Everything At Once
+
+Resources mentioned in this episode:
+
+My LinkedIn: / areganti
+
+Website: https://levelup-labs.ai/
+
+Free Newsletter: https://thenuancedperspective.substack.com/
+
+Free Courses: https://levelup-labs.ai/education
+
+My GitHub (AI resources): https://github.com/aishwaryanr/awesome-generative-ai-guide
+
+
+Instagram: / aish_reganti
